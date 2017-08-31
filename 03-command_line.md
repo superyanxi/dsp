@@ -19,22 +19,37 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > **pwd** show current working directory path
+    **mkdir** creating a directory
+    **rm -r** deleting a directory
+    **touch** creating a file using `touch` command
+    **rm** deleting a file
+    **mv** renaming a file
+    **ls -a** listing hidden Files
+    **cp [file] [dir]** copying a file from one directory to another
+    **ls -l** lists all contents in long format
+    **ls -t** orders files and directories by the time they were last modified
 
 ---
 
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
+`ls`
+`ls -a`
+`ls -l`
+`ls -lh`
 `ls -lah`  
-`ls -t`  
+`ls -t`
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls` lists all files and directories in the     working directory.
+    `ls -a` lists all contents of a directory, including hidden files and directories
+    `ls -l` lists all contents in long format  
+    `ls -lh` Long listing with Human readable file sizes
+    `ls -lah`   Long listing with Human readable file sizes and lists all contents of a directory, including hidden files and directories
+    `ls -t` list orders files and directories by the time they were last modified
+    `ls -Glp`  
 
 ---
 
@@ -42,7 +57,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > **ls -F** Flags filenames.
+    **ls -m** Displays the names as a comma-separated list.
+    **ls -u** Displays files by the file access time.
+    **ls -x** Displays files as rows across the screen.
+    **ls -b** Displays nonprinting characters in octal.
 
 ---
 
@@ -50,7 +69,4 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
-
+> > xargs command is designed to construct argument lists and invoke other utility. xargs reads items from the standard input or pipes, delimited by blanks or newlines, and executes the command one or more times with any initial-arguments followed by items read from standard input. 
