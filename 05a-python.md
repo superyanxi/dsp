@@ -14,15 +14,19 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE
 
----
+---**Both python and tuples are sequence structure and they can contain any type of objects. Tuples are immutable which can't be inserted and deleted. Lists are mutable which can be changed. Tuples can be used  as keys in dictionaries due to their immutability.**
 
 ### Q2. Lists &amp; Sets
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
+
 >> REPLACE THIS TEXT WITH YOUR RESPONSE
 
----
+---**Sets are mutable unordered sequence of unique elements. Sets can contain repeated elements.
+i.e a = set([1,2,3])
+a = {1,2,3}
+set should faster for finding an elements.Since sets only contain unique elements so it would have to search whole set to find the elements in general.**
 
 ### Q3. Lambda Function
 
@@ -30,7 +34,10 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE
 
----
+---**lambda is anonymous function. It is often used in conjunction with typical functional concepts like filter(),map() and reduce().
+i.e sorted(["apple","banana","Cherry","pear"],key = lambda word: word[1])
+['banana', 'pear', 'Cherry', 'apple']**
+
 
 ### Q4. List Comprehension, Map &amp; Filter
 
@@ -38,7 +45,16 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE
 
----
+---List comprehensions provide a concise way to create lists. It consists of brackets containing an expression followed by a for clause then zero or more for or if clauses.
+i.e:
+items = [1,2,3,4,5,6]
+square1 = [x**2 for x in items]
+square1 = list(map(lambda x: x**2, items))
+
+i.e
+items = [1,2,3,4,5]
+evennumber = [x for x in items if x%2 == 0]
+evennumber = list(filter(lambda x: x%2 == 0, items))
 
 ### Complete the following problems by editing the files below:
 
@@ -85,8 +101,3 @@ Edit the 5 functions in [q7_lists.py](python/q7_lists.py)
 
 ### Q8. Parsing
 Write a script as indicated (using the football data) in [q8_parsing.py](python/q8_parsing.py)
-
-
-
-
-
